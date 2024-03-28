@@ -39,3 +39,10 @@ docker-compose exec laravel-app bash
 php artisan key:generate
 ```
 
+8. Edit the host file
+```bash
+sudo vi /etc/hosts
+
+
+127.0.0.1 laravel-docker-example.com
+```
