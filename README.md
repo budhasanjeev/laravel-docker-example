@@ -2,7 +2,7 @@
 
 1. Clone this repo
 ```bash
-https://github.com/budhasanjeev/react-docker-example.git
+https://github.com/budhasanjeev/laravel-docker-example.git
 ```
 
 2. Go inside the directory
