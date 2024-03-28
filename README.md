@@ -5,12 +5,12 @@
 https://github.com/budhasanjeev/laravel-docker-example.git
 ```
 
-2. Go inside the directory
+2. Navigate inside the project directory
 ```bash
 cd laravel-docker-example
 ```
 
-3. Build the image
+3. Build the docker images
 ```bash
 docker-compose build
 ```
@@ -20,21 +20,22 @@ docker-compose build
 docker-compose up -d
 ```
 
-5. To composer install
+5. Run composer install
 ```bash
 docker-compose exec laravel-app bash
-```
-
-```bash
 composer install
 ```
 
 6. Run artisan migration
 ```bash
 docker-compose exec laravel-app bash
+ln -s .env.local .env
+php artisan migrate
 ```
 
+7. Create application key
 ```bash
-php artisan migrate
+docker-compose exec laravel-app bash
+php artisan key:generate
 ```
 
